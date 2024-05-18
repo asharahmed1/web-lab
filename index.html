@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Project by Ashar Ahmed 057</title>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-family: VT323;
+      margin: 1em auto;
+      color: #18e018;
+      text-align: center;
+    }
+
+    body {
+      background-color: #1b1b1b;
+      font-size: 16px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 1em;
+    }
+
+    .pixel {
+      width: 10em;
+      height: 5em;
+      outline: solid 0.25em #000;
+      box-shadow: inset .313em .313em 0 rgba(0,0,0,0.4), inset -.313em -.313em 0 rgba(255,255,255,0.4), 0 1em 0.625em -.4em rgba(0,0,0,0.8);
+      transition: linear .2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: VT323;
+      color: #18e018;
+      font-size: 1.5em;
+      text-transform: uppercase;
+    }
+
+    .pixel:hover {
+      box-shadow: inset .313em .313em 0 rgba(0,0,0,0.8), inset -.313em -.313em 0 rgba(255,255,255,0.6), 0 1em 0.625em -.4em rgba(255,255,255,0.8);
+    }
+
+    .pixel:before {
+      content: " ";
+      position: absolute;
+      top: -.25em;
+      left: -.25em;
+      width: .625em;
+      height: .625em;
+      background: #1b1b1b;
+      border-bottom: solid .25em #000;
+      border-right: solid .25em #000;
+    }
+
+    .pixel:after {
+      content: " ";
+      position: absolute;
+      bottom: -.25em;
+      right: -.25em;
+      width: .625em;
+      height: .625em;
+      background: #1b1b1b;
+      border-top: solid .25em #000;
+      border-left: solid .25em #000;
+    }
+
+    .student-form {
+      background: #2B7FA3;
+    }
+
+    .website-project {
+      background: #D34B5B;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Web Lab Project by Ashar Ahmed 057</h1>
+
+  <div class="button-container">
+    <div class="pixel student-form">
+      <i class="icon-student"></i> Q1 (student form)
+    </div>
+
+    <div class="pixel website-project">
+      <i class="icon-website"></i> Q2 (website project)
+    </div>
+  </div>
+
+</body>
+</html>
